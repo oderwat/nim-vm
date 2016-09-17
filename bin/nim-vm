@@ -234,7 +234,7 @@ function install_version() {
 
     NIM_CACHE=$NIM_DIR/repo_cache
     if [ ! -d $NIM_CACHE ]; then
-        echo "No cacehd repository found, cloning $NIM_REPO to $NIM_CACHE..."
+        echo "No cached repository found, cloning $NIM_REPO to $NIM_CACHE..."
         git_timed clone $NIM_REPO $NIM_CACHE
     else
         echo "Using cached repository $NIM_CACHE"
